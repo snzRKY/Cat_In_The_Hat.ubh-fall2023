@@ -1,5 +1,6 @@
+package parts;
+
 import Define.define;
-import com.sun.tools.jconsole.JConsolePlugin;
 
 import javax.swing.*;
 import java.awt.*;
@@ -60,8 +61,8 @@ public class Hat extends JPanel {
 
             this.setBackground(Color.green);
         }
-        if(define.hatStatus.equals("nohat")){
-            hat = new ImageIcon("images/nohat.png");
+        if(define.hatStatus.equals("bald")){
+            hat = new ImageIcon("images/bald.png");
             label.setIcon(hat);
 
             this.setBackground(Color.green);

@@ -1,8 +1,10 @@
 
 
 import Define.define;
+import parts.*;
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -18,6 +20,10 @@ public class main {
         HatOption wheel = new HatOption();
 
         //Main Window
+        ImageIcon icon = new ImageIcon("images/icon.png");
+        define.window.setIconImage(icon.getImage());
+        define.window.getContentPane().setBackground(Color.getHSBColor(40,57,80));
+
         define.window.setSize(200,350);
         define.window.setVisible(true);
         define.window.setResizable(false);
@@ -46,11 +52,19 @@ public class main {
         });
         define.window.repaint();
 
+        wheel.setOpaque(false);
+        wheel.setBorder(new EmptyBorder(0,0,0,0));
         JScrollPane scrollPane = new JScrollPane (wheel);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-        scrollPane.setBounds(0,255,190,75);
-        scrollPane.setBackground(Color.black);
+        scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane.setBounds(0,220,190,75);
 
+        scrollPane.getHorizontalScrollBar().setBackground(Color.getHSBColor(40,57,80));
+        scrollPane.getVerticalScrollBar().setBackground(Color.getHSBColor(40,57,80));
+        scrollPane.setOpaque(false);
+        scrollPane.getViewport().setOpaque(false);
+        scrollPane.setBorder(new EmptyBorder(0,0,0,0));
+        scrollPane.getHorizontalScrollBar().setValues(200,200,200,200);
         define.window.add(scrollPane);
 
 
@@ -65,7 +79,5 @@ public class main {
 
         define.window.add(layeredPane);
         define.window.revalidate();
-
-
     }
 }

@@ -1,4 +1,4 @@
-# **Cat in the Hat** :smiley_cat::point_right::tophat:
+# **Cat in the parts.Hat** :smiley_cat::point_right::tophat:
 
 ## Description
 

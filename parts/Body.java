@@ -1,3 +1,5 @@
+package parts;
+
 import javax.swing.*;
 import java.awt.*;
 import Define.define;

@@ -6,11 +6,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class define {
-    public static String hatStatus = "santa";
+    public static String hatStatus = "bald";
 
 
     //Window
     public static JFrame window = new JFrame();
+
 
     //Mouse events
     public static boolean inWindow = true;
@@ -18,7 +19,7 @@ public class define {
     public static int mousePosY = 0;
 
 
-    //Head
+    //parts.Head
     public static int headX = 45;
     public static int headY = 45;
 
@@ -32,7 +33,7 @@ public class define {
     //Right Ear
 
 
-    //Body
+    //parts.Body
     public static int bodyX = define.headX + 12; // 127
     public static int bodyY = define.headY + 100; // 170
 

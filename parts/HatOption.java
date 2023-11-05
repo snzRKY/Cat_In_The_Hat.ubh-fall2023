@@ -1,3 +1,5 @@
+package parts;
+
 import Define.define;
 
 import javax.swing.*;
@@ -27,7 +29,9 @@ public class HatOption extends JPanel{
         icon = new ImageIcon("images/santa.png");
         santa.setIcon(icon);
         santa.setUI(new BasicButtonUI());
-        santa.setFocusable(true);
+
+        santa.setBorderPainted(false);
+        santa.setBackground(Color.getHSBColor(40,57,80));
 
 
 
@@ -43,6 +47,10 @@ public class HatOption extends JPanel{
         icon = new ImageIcon("images/tophat.png");
         tophat.setIcon(icon);
         tophat.setUI(new BasicButtonUI());
+        tophat.setBorderPainted(false);
+        tophat.setBackground(Color.getHSBColor(40,57,80));
+
+
 
         JButton witch = new JButton (); //create a button with a label
         this.add (witch); //add the button to the panel
@@ -56,6 +64,13 @@ public class HatOption extends JPanel{
         icon = new ImageIcon("images/witch.png");
         witch.setIcon(icon);
         witch.setUI(new BasicButtonUI());
+        witch.setBorderPainted(false);
+        witch.setBackground(Color.getHSBColor(40,57,80));
+
+
+
+
+
 
         JButton amongus = new JButton (); //create a button with a label
         this.add (amongus); //add the button to the panel
@@ -70,6 +85,13 @@ public class HatOption extends JPanel{
         amongus.setIcon(icon);
         amongus.setVisible(true);
         amongus.setUI(new BasicButtonUI());
+        amongus.setBorderPainted(false);
+        amongus.setBackground(Color.getHSBColor(40,57,80));
+
+
+
+
+
 
         JButton leaf = new JButton (); //create a button with a label
         this.add (leaf); //add the button to the panel
@@ -85,6 +107,10 @@ public class HatOption extends JPanel{
         leaf.setIcon(icon);
         leaf.setVisible(true);
         leaf.setUI(new BasicButtonUI());
+        leaf.setBorderPainted(false);
+        leaf.setBackground(Color.getHSBColor(40,57,80));
+
+
 
 
         JButton icecream = new JButton (); //create a button with a label
@@ -100,6 +126,13 @@ public class HatOption extends JPanel{
         icecream.setIcon(icon);
         icecream.setVisible(true);
         icecream.setUI(new BasicButtonUI());
+        icecream.setBorderPainted(false);
+        icecream.setBackground(Color.getHSBColor(40,57,80));
+
+
+
+
+
 
         JButton birthday = new JButton (); //create a button with a label
         this.add (birthday); //add the button to the panel
@@ -114,17 +147,25 @@ public class HatOption extends JPanel{
         birthday.setIcon(icon);
         birthday.setVisible(true);
         birthday.setUI(new BasicButtonUI());
+        birthday.setBorderPainted(false);
+        birthday.setBackground(Color.getHSBColor(40,57,80));
 
-        JButton nohat = new JButton ("No Hat"); //create a button with a label
+
+
+
+        JButton nohat = new JButton ("Bald"); //create a button with a label
         this.add (nohat); //add the button to the panel
         nohat.setVisible(true);
         nohat.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                define.hatStatus = "nohat";
+                define.hatStatus = "bald";
             }
         });
         nohat.setUI(new BasicButtonUI());
+        nohat.setBorderPainted(false);
+        nohat.setBackground(Color.getHSBColor(40,57,80));
+
 
         this.setVisible(true);
     }

@@ -1,3 +1,5 @@
+package parts;
+
 import Define.define;
 
 import javax.swing.*;
