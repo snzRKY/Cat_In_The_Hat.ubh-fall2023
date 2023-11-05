@@ -71,5 +71,8 @@ public class main {
 
         define.window.add(layeredPane);
         define.window.revalidate();
+
+        define.window.setVisible(true);
+    
     }
 }
