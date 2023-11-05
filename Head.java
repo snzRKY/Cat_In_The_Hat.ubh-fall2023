@@ -31,8 +31,14 @@ public class Head extends JPanel {
     }
 
     public Head() {
+        ImageIcon cat = new ImageIcon("images/cathead.png");
+        JLabel label = new JLabel();
+        label.setIcon(cat);
+        setOpaque(false);
+        this.add(label);
+
         this.setBounds(x, y, define.headwidth, define.headheight); // set its initial bounds
-        this.setBackground(Color.black); // set its background color
+
         timer = new Timer(delay, new ActionListener() { // create the timer
             @Override
             public void actionPerformed(ActionEvent e) {

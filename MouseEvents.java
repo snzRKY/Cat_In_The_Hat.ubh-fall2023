@@ -8,12 +8,12 @@ import java.awt.event.ActionListener;
 public class MouseEvents extends JPanel{
 
     private Timer timer;
-    private int delay = 50;
-    public static int reactXLeft = define.headX - 60;
-    public static int reactXRight = define.headX +define.headwidth + 60;
+    private int delay = 1;
+    public static int reactXLeft = define.headX - 30;
+    public static int reactXRight = define.headX +define.headwidth + 30;
 
-    public static int reactYUp = 30;
-    public static int reactYDown = 220;
+    public static int reactYUp = 50;
+    public static int reactYDown = 200;
 
     private static void recordMouse() {
         Point mousePos = define.window.getMousePosition();

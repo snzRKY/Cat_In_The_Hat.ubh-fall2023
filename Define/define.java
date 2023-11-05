@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class define {
-    public static String hatStatus = "nohat";
+    public static String hatStatus = "santa";
 
 
     //Window
@@ -19,8 +19,8 @@ public class define {
 
 
     //Head
-    public static int headX = 115;
-    public static int headY = 70;
+    public static int headX = 45;
+    public static int headY = 45;
 
     public static int headwidth = 100;
     public static int headheight = 100;

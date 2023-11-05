@@ -18,7 +18,7 @@ public class main {
         HatOption wheel = new HatOption();
 
         //Main Window
-        define.window.setSize(350,400);
+        define.window.setSize(200,350);
         define.window.setVisible(true);
         define.window.setResizable(false);
         define.window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,12 +44,18 @@ public class main {
                 define.inWindow = false;
             }
         });
+        define.window.repaint();
 
+        JScrollPane scrollPane = new JScrollPane (wheel);
+        scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        scrollPane.setBounds(0,255,190,75);
+        scrollPane.setBackground(Color.black);
 
-
+        define.window.add(scrollPane);
 
 
         JLayeredPane layeredPane = new JLayeredPane();
+        layeredPane.setVisible(true);
         layeredPane.add(body,0);
         layeredPane.add(mouse,0);
         layeredPane.add(head,0);
@@ -57,15 +63,8 @@ public class main {
 
 
 
-
-        JScrollPane scrollPane = new JScrollPane (wheel);
-        scrollPane.getViewport().setViewPosition(new Point(0,280));
-        scrollPane.setBounds(0,280,350,100);
-
-        define.window.add(scrollPane);
-
-        Hat.onOff = true;
         define.window.add(layeredPane);
+        define.window.revalidate();
 
 
     }
