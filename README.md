@@ -13,4 +13,5 @@
 **:smiling_face_with_three_hearts: :smiling_face_with_three_hearts: :smiling_face_with_three_hearts:**
 
 ## How to run!
+Clone this REPO into the IDE of your choice and run it from there
 
