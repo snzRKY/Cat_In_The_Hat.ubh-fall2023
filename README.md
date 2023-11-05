@@ -13,3 +13,5 @@
 ### **Enjoy your time with your cats, and may your lives be filled with purrs, playfulness, and endless joy!** 
 **:smiling_face_with_three_hearts: :smiling_face_with_three_hearts: :smiling_face_with_three_hearts:**
 
+## How to run!
+
