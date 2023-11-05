@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class MouseEvents extends JPanel{
+
     private Timer timer;
     private int delay = 50;
     public static int reactXLeft = define.headX - 60;
@@ -30,6 +31,7 @@ public class MouseEvents extends JPanel{
     }
 
     public MouseEvents(){
+        this.setVisible(false);
         this.setBackground(Color.red);
         //define.headX - 50
         //

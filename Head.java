@@ -11,6 +11,7 @@ public class Head extends JPanel {
     private int bounds = 15;
     // this method moves the head panel down by one pixel
     private void moveHead() {
+        this.setVisible(true);
         if(define.headMov == 1){
             if(bounds < 15){
                 y--;

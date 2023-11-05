@@ -12,7 +12,7 @@ public class Hat extends JPanel {
     public static int x = define.headX; // the initial x coordinate of the head
     public static int y = define.headY; // the initial y coordinate of the head
     private int delay = 10; // the delay of the timer in milliseconds
-    public static boolean onOff = false;
+    public static boolean onOff = true;
 
 
     private void moveHat() {
@@ -54,7 +54,7 @@ public class Hat extends JPanel {
                 moveHat(); // call the moveHat() method every delay milliseconds
             }
         });
-
+        this.setVisible(true);
         this.startAnimation();
     }
 

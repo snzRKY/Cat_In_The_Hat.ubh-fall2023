@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class define {
+    public static String hatStatus = "nohat";
+
+
     //Window
     public static JFrame window = new JFrame();
 

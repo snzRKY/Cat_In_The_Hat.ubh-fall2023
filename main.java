@@ -6,7 +6,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.util.function.BiPredicate;
 
 
 public class main {
@@ -16,6 +15,7 @@ public class main {
         Body body = new Body();
         Hat hat = new Hat();
         MouseEvents mouse = new MouseEvents();
+        HatOption wheel = new HatOption();
 
         //Main Window
         define.window.setSize(350,400);
@@ -50,13 +50,21 @@ public class main {
 
 
         JLayeredPane layeredPane = new JLayeredPane();
-        layeredPane.add(head,0);
-        layeredPane.add(body,1);
-        layeredPane.add(hat,0);
+        layeredPane.add(body,0);
         layeredPane.add(mouse,0);
+        layeredPane.add(head,0);
+        layeredPane.add(hat,0);
+
+
+
+
+        JScrollPane scrollPane = new JScrollPane (wheel);
+        scrollPane.getViewport().setViewPosition(new Point(0,280));
+        scrollPane.setBounds(0,280,350,100);
+
+        define.window.add(scrollPane);
 
         Hat.onOff = true;
-
         define.window.add(layeredPane);
 
 
