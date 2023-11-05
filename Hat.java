@@ -11,11 +11,12 @@ public class Hat extends JPanel {
     private Timer timer; // the timer to control the animation
     public static int x = define.headX; // the initial x coordinate of the head
     public static int y = define.headY; // the initial y coordinate of the head
-    private int delay = 50; // the delay of the timer in milliseconds
+    private int delay = 10; // the delay of the timer in milliseconds
     public static boolean onOff = false;
 
 
-    private void moveHead() {
+    private void moveHat() {
+
         if(onOff == true){
             this.setVisible(true);
             this.setLocation(Head.x+25, Head.y-30); // update the location of the head panel
@@ -50,7 +51,7 @@ public class Hat extends JPanel {
         timer = new Timer(delay, new ActionListener() { // create the timer
             @Override
             public void actionPerformed(ActionEvent e) {
-                moveHead(); // call the moveHead method every delay milliseconds
+                moveHat(); // call the moveHat() method every delay milliseconds
             }
         });
 

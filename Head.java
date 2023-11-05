@@ -8,20 +8,15 @@ public class Head extends JPanel {
     public static int x = define.headX; // the initial x coordinate of the head
     public static int y = define.headY; // the initial y coordinate of the head
     private int delay = 50; // the delay of the timer in milliseconds
-
-    private int movement = -1; //1 = up -1 = down
-    private int bounds = 10;
+    private int bounds = 15;
     // this method moves the head panel down by one pixel
     private void moveHead() {
-        if(movement == 1){
-            if(bounds < 10){
+        if(define.headMov == 1){
+            if(bounds < 15){
                 y--;
                 bounds++;
                 this.setLocation(x, y); // update the location of the head panel
                 repaint(); // repaint the moving panel
-            }
-            else{
-                movement = -1;
             }
         }
         else{
@@ -31,29 +26,8 @@ public class Head extends JPanel {
                 this.setLocation(x, y); // update the location of the head panel
                 repaint(); // repaint the moving panel
             }
-            else{
-                movement = 1;
-            }
         }
     }
-
-    // this method starts the animation in a background thread
-    public void startAnimation() {
-        SwingWorker<Void, Void> worker = new SwingWorker<Void, Void>() {
-            @Override
-            protected Void doInBackground() throws Exception {
-                timer.start(); // start the timer
-                return null;
-            }
-        };
-        worker.execute(); // execute the worker
-    }
-
-    // this method stops the animation
-    public void stopAnimation() {
-        timer.stop(); // stop the timer
-    }
-
 
     public Head() {
         this.setBounds(x, y, define.headwidth, define.headheight); // set its initial bounds
@@ -65,7 +39,7 @@ public class Head extends JPanel {
             }
         });
 
-        this.startAnimation();
+        timer.start();
     }
 
 }

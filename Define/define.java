@@ -1,13 +1,27 @@
 package Define;
 
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class define {
+    //Window
+    public static JFrame window = new JFrame();
+
+    //Mouse events
+    public static boolean inWindow = true;
+    public static int mousePosX = 0;
+    public static int mousePosY = 0;
+
+
     //Head
     public static int headX = 115;
     public static int headY = 70;
 
     public static int headwidth = 100;
     public static int headheight = 100;
-
+    public static int headMov = 1;
 
     //Left Ear
 
