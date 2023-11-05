@@ -8,6 +8,6 @@
 
 
 ### **Research shows petting a cat induces calming effects, so why get a real cat when you have this vitual cat!** 
-**You get to free the stress without the all mess!** :smiley:	:smiley:	:smiley:	
+## **You get to free the stress without the all mess!** :smiley:	:smiley:	:smiley:	
 
 ### **Enjoy your time with your cats, and may your lives be filled with purrs, playfulness, and endless joy!** :smiling_face_with_three_hearts: :smiling_face_with_three_hearts: :smiling_face_with_three_hearts:
