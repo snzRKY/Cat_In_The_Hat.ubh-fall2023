@@ -3,6 +3,7 @@ package parts;
 import Define.define;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import javax.swing.plaf.basic.BasicButtonUI;
 import java.awt.*;
@@ -31,6 +32,7 @@ public class HatOption extends JPanel{
         santa.setUI(new BasicButtonUI());
 
         santa.setBorderPainted(false);
+
         santa.setBackground(Color.getHSBColor(40,57,80));
 
 
@@ -66,8 +68,6 @@ public class HatOption extends JPanel{
         witch.setUI(new BasicButtonUI());
         witch.setBorderPainted(false);
         witch.setBackground(Color.getHSBColor(40,57,80));
-
-
 
 
 

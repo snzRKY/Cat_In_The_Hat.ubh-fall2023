@@ -1,9 +1,15 @@
 package parts;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 import Define.define;
+
+import javax.print.attribute.standard.Media;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
 
 public class Head extends JPanel {
     private Timer timer; // the timer to control the animation
@@ -11,30 +17,40 @@ public class Head extends JPanel {
     public static int y = define.headY; // the initial y coordinate of the head
     private int delay = 50; // the delay of the timer in milliseconds
     private int bounds = 15;
-    // this method moves the head panel down by one pixel
+    private ImageIcon cat = new ImageIcon("images/cathead.png");
+    private JLabel label = new JLabel();
+
+
+    // moves head down
     private void moveHead() {
         this.setVisible(true);
-        if(define.headMov == 1){
+        if(define.headMov == 1){ // up
             if(bounds < 15){
+                if(bounds > 13){
+                    cat = new ImageIcon("images/cathead.png");
+                    label.setIcon(cat);
+                }
                 y--;
                 bounds++;
-                this.setLocation(x, y); // update the location of the head panel
-                repaint(); // repaint the moving panel
+                this.setLocation(x, y);
+                repaint();
             }
         }
-        else{
+        else{ // down
             if(bounds > 0){
+                cat = new ImageIcon("images/catheadblink.png");
+                label.setIcon(cat);
                 y++; // increment the y coordinate
                 bounds--;
                 this.setLocation(x, y); // update the location of the head panel
                 repaint(); // repaint the moving panel
+
             }
         }
     }
 
     public Head() {
-        ImageIcon cat = new ImageIcon("images/cathead.png");
-        JLabel label = new JLabel();
+
         label.setIcon(cat);
         setOpaque(false);
         this.add(label);

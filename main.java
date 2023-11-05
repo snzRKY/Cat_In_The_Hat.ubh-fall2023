@@ -1,5 +1,3 @@
-
-
 import Define.define;
 import parts.*;
 
@@ -12,12 +10,12 @@ import java.awt.event.MouseListener;
 
 public class main {
     public static void main(String[] args){
-
         Head head = new Head();
         Body body = new Body();
         Hat hat = new Hat();
         MouseEvents mouse = new MouseEvents();
         HatOption wheel = new HatOption();
+        ScrollText text = new ScrollText();
 
         //Main Window
         ImageIcon icon = new ImageIcon("images/icon.png");
@@ -30,15 +28,9 @@ public class main {
         define.window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         define.window.setAlwaysOnTop(true);
         define.window.addMouseListener(new MouseListener() {
-            public void mouseClicked(MouseEvent e) {
-
-            }
-            public void mousePressed(MouseEvent e) {
-
-            }
-            public void mouseReleased(MouseEvent e) {
-
-            }
+            public void mouseClicked(MouseEvent e) {}
+            public void mousePressed(MouseEvent e) {}
+            public void mouseReleased(MouseEvent e) {}
 
             public void mouseEntered(MouseEvent evt) {
                 // do your action here when mouse enters the window
@@ -74,7 +66,7 @@ public class main {
         layeredPane.add(mouse,0);
         layeredPane.add(head,0);
         layeredPane.add(hat,0);
-
+        layeredPane.add(text,0);
 
 
         define.window.add(layeredPane);
