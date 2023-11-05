@@ -1,4 +1,4 @@
-# **Cat in the parts.Hat** :smiley_cat::point_right::tophat:
+# **Cat in the Hat** :smiley_cat::point_right::tophat:
 
 ### **Do you feel lonely, sitting there at your computer wondering why am I here...?**
 **Well fear not, this is the CAT IN THE HAT! An app which does exactly as the name implies shows you a cat in a hat.**
