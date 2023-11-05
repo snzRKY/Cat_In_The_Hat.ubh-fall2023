@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ubh-fall2023-kofileong:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ubh_fall2023_kofileong_jar</output-path>
+    <root id="archive" name="ubh-fall2023-kofileong.jar">
+      <element id="module-output" name="ubh-fall2023-kofileong" />
+    </root>
+  </artifact>
+</component>
