@@ -14,5 +14,6 @@
 **:smiling_face_with_three_hearts: :smiling_face_with_three_hearts: :smiling_face_with_three_hearts:**
 
 ## How to run!
-Download the latest release and run the file!
+1) Download JDK 20.1
+2) Download the latest repository release and run the file!
 
