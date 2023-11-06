@@ -4,6 +4,7 @@
 **Well fear not, this is the CAT IN THE HAT! An app which does exactly as the name implies shows you a cat in a hat.**
 **You can Pet it and Change its Hat! Now don't you just love having a companion with you :)**  :dancer:
 **Introducing Cat in the Hat Debugging Method!**
+
 <img width="200" alt="Screenshot 2023-11-05 075707" src="https://github.com/UBH-Fall2023/ubh-fall2023-kofileong/assets/97703137/fdefe98d-f0ce-436d-8820-cf56c3075ede">
 
 ### **Research shows petting a cat induces calming effects, so why get a real cat when you have this vitual cat!** 
